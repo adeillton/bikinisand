@@ -64,7 +64,7 @@
   #inicio {
       display: flex; align-items: center; justify-content: center;
       min-height: 100vh;
-      background: url('../images/hero-background.jpg') no-repeat center center/cover;
+      background: url('../images/hero-background.JPG') no-repeat center center/cover;
       background-attachment: fixed;
       position: relative;
   }
