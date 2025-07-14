@@ -64,7 +64,7 @@
   #inicio {
       display: flex; align-items: center; justify-content: center;
       min-height: 100vh;
-      background: url('../images/hero-background.JPG') no-repeat center center/cover;
+      background: url('../images/hero-background.jpg') no-repeat center center/cover;
       background-attachment: fixed;
       position: relative;
   }
@@ -106,7 +106,7 @@
   }
   .scroll-indicator { position: absolute; bottom: 40px; color: var(--cor-branco); font-weight: 500; }
   
-  /* ========= MANIFESTO, PORTFOLIO (sem alterações) ========= */
+  /* ========= MANIFESTO, PORTFOLIO, SOBRE ========= */
   #manifesto { border-top: 1px solid rgba(0,0,0,0.08); border-bottom: 1px solid rgba(0,0,0,0.08); }
   .manifesto-text { font-family: var(--fonte-titulos); font-size: clamp(1.8rem, 4vw, 2.8rem); text-align: center; line-height: 1.5; max-width: 800px; margin: 0 auto; }
   #portfolio { background-color: var(--cor-creme); }
@@ -117,26 +117,16 @@
   .item-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 20px 20px 20px; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); color: var(--cor-branco); opacity: 0; transition: opacity 0.4s ease; }
   .portfolio-item:hover .item-overlay { opacity: 1; }
   .item-overlay h3 { font-family: var(--fonte-titulos); font-size: 1.5rem; }
-  
-  /* ========= SEÇÃO SOBRE COM ASSINATURA ========= */
   #sobre { background-color: #F8EFE2; }
   .about-container { display: flex; align-items: center; gap: 5%; }
   .about-image { flex: 1; max-width: 40%; }
   .about-image img { width: 100%; border-radius: 10px; }
   .about-text { flex: 1; padding-left: 5%; }
   .about-text .section-title { text-align: left; }
-  .about-text p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; } /* Adicionado espaço para a assinatura */
-  /* --- NOVO ESTILO PARA A ASSINATURA "IN MIRACLES" --- */
-  .in-miracles-signature {
-      font-family: var(--fonte-corpo);
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--cor-laranja);
-      letter-spacing: 4px;
-      text-transform: uppercase;
-  }
+  .about-text p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; }
+  .in-miracles-signature { font-family: var(--fonte-corpo); font-weight: 700; font-size: 1rem; color: var(--cor-laranja); letter-spacing: 4px; text-transform: uppercase; }
   
-  /* ========= SEÇÃO CONTATO RESTAURADA ========= */
+  /* ========= SEÇÃO CONTATO ========= */
   #contato { text-align: center; background-color: var(--cor-verde); }
   #contato .subtitle, #contato .section-title, #contato p { color: var(--cor-laranja); }
   #contato p { max-width: 650px; margin: 20px auto 40px auto; }
@@ -182,8 +172,15 @@
       .nav-mobile.active { right: 0; }
       .nav-mobile-link { font-family: var(--fonte-titulos); font-size: 1.5rem; color: var(--cor-texto); text-decoration: none; }
       .nav-mobile-close-button { position: absolute; top: 30px; right: 30px; background: none; border: none; color: var(--cor-texto); font-size: 1.8rem; cursor: pointer; }
+      
       .logo img { height: 80px; }
       header.scrolled .logo img { height: 70px; }
+  
+      /* --- CORREÇÃO: Zoom da imagem de fundo no Mobile --- */
+      #inicio {
+          background-attachment: scroll; /* Desativa o efeito parallax/fixo no mobile */
+      }
+      
       .portfolio-grid { grid-template-columns: 1fr 1fr; gap: 15px; }
       .about-container { flex-direction: column; gap: 30px; }
       .about-image { max-width: 70%; order: -1; }
