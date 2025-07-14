@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikinisand</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <a href="#inicio" class="logo">
+                <img src="assets/images/logo-bikinisand.png" alt="Logotipo Bikinisand">
+            </a>
+            <nav class="nav-desktop">
+                <a href="#portfolio">Coleções</a>
+                <a href="#sobre">Essência</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="nav-mobile-button" id="mobile-menu-button" aria-label="Abrir Menu">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </button>
+        </div>
+    </header>
+    
+    <div class="nav-mobile" id="mobile-menu">
+        <button class="nav-mobile-close-button" id="mobile-menu-close-button" aria-label="Fechar Menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#portfolio" class="nav-mobile-link">Coleções</a>
+        <a href="#sobre" class="nav-mobile-link">Essência</a>
+        <a href="#contato" class="nav-mobile-link">Contato</a>
+    </div>
+
+    <main>
+        <section id="inicio">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1 class="hero-brand-name">
+                    <span class="logo-part-serif">bikini</span><span class="logo-part-script">sand</span>
+                </h1>
+                <p>Designs que se movem com você.</p>
+            </div>
+            <div class="scroll-indicator">
+                <span>Role para explorar</span>
+            </div>
+        </section>
+
+        <section id="manifesto" class="section-padding">
+            <div class="container" data-aos="fade-up">
+                <p class="manifesto-text">
+                    Acreditamos no sol que aquece, na areia que abraça e no design que liberta. Criamos mais que biquínis; criamos uma segunda pele para a sua alma de verão.
+                </p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="subtitle">Portfólio</span>
+                    <h2 class="section-title">Nossas Criações</h2>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-aos="fade-up"><img src="assets/images/biquine1.jpeg" alt="Biquíni"><div class="item-overlay"><h3>Modelo Cortininha</h3></div></div>
+                    <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100"><img src="assets/images/biquine2.jpeg" alt="Biquíni"><div class="item-overlay"><h3>Modelo Lana</h3></div></div>
+                    <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200"><img src="assets/images/biquine3.jpeg" alt="Biquíni"><div class="item-overlay"><h3>Modelo Cortininha</h3></div></div>
+                    <div class="portfolio-item" data-aos="fade-up"><img src="assets/images/biquine4.jpeg" alt="Biquíni"><div class="item-overlay"><h3>Modelo Sarah</h3></div></div>
+                    <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100"><img src="assets/images/biquine7.jpeg" alt="Biquíni"><div class="item-overlay"><h3>Modelo Bruna</h3></div></div>
+                    <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100"><img src="assets/images/biquine6.jpeg" alt="Biquíni"><div class="item-overlay"><h3>Modelo Anjos</h3></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section-padding">
+            <div class="container about-container">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="assets/images/sobre.png" alt="Sobre a Bikinisand">
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="150">
+                    <span class="subtitle">Nossa Essência</span>
+                    <h2 class="section-title">Design com alma brasileira</h2>
+                    <p>Nascida da paixão pelo sol, a Bikinisand foi criada para a mulher que busca conforto, estilo e qualidade. Cada peça é desenhada no Brasil, pensando em realçar a beleza natural de cada corpo com design atemporal e tecidos sustentáveis.</p>
+                    <div class="in-miracles-signature">IN MIRACLES</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contato" class="section-padding text-center">
+             <div class="container" data-aos="zoom-in">
+                <span class="subtitle">Fale Conosco</span>
+                <h2 class="section-title">Ficou com alguma dúvida?</h2>
+                <p>Gostou de um modelo, quer saber mais sobre um tecido ou precisa de ajuda com o seu pedido? Chame a gente no WhatsApp, vamos adorar conversar com você!</p>
+                <a href="https://api.whatsapp.com/send?phone=5582994005531&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Bikinisand%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="cta-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+             </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#inicio" class="footer-logo-link">
+                    <img src="assets/images/logo-branca.png" alt="Símbolo Bikinisand" class="footer-logo">
+                </a>
+                <nav class="footer-nav">
+                    <a href="#portfolio">Coleções</a>
+                    <a href="#sobre">Essência</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/bikinisand_v/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bikinisand</p>
+                <p>Um projeto <a href="#" target="_blank">Render Haus</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
